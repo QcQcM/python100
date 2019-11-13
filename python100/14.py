@@ -3,14 +3,16 @@ from pip._vendor.distlib.compat import raw_input
 import math
 from functools import reduce
 
+
 def isPrime(num):
     if num == 1 or num == 2:
         return True
     else:
-        for i in range(2, int(math.sqrt(num))+1):
+        for i in range(2, int(math.sqrt(num)) + 1):
             if num % i == 0:
                 return False
         return True
+
 
 num = int(raw_input('num:'))
 nowNum = num
